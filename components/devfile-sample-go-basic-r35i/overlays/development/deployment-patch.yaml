@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-r35i
+  namespace: e2e-demos-vpzr-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:2b1411f2261457848fa4776c26aaad3c24943a09d99079875403d0289b40b0e2
+        name: my-go
+        resources: {}
+status: {}
